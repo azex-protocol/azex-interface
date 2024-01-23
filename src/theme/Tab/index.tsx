@@ -102,7 +102,7 @@ const Tabs = ({
   const child = children as ReactElement
   return (
     <Box sx={sx}>
-      <Header mb={3} sx={{ borderBottom: 'small', borderColor: 'neutral6', ...headerSx }} display="flex">
+      <Header mb={3} sx={{ ...headerSx }} display="flex">
         <TabItem active={true} key={child.key} type="button">
           {child.props.tab}
         </TabItem>

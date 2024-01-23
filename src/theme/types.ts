@@ -26,6 +26,11 @@ export type Colors = {
   primary2: Color
   primary3: Color
 
+  //background colors
+  background1: Color
+  background2: Color
+  background3: Color
+
   // other
   red1: Color
   red2: Color
