@@ -1,8 +1,10 @@
-import { ArrowBendDoubleUpLeft, ArrowDownLeft, ArrowUpLeft } from '@phosphor-icons/react'
+import { TrendDown, TrendUp } from '@phosphor-icons/react'
 
 import useTabHandler from 'hooks/router/useTabHandler'
 import Tabs, { TabPane } from 'theme/Tab'
 import { Box, Flex } from 'theme/base'
+
+import ActionForm from './ActionForm'
 
 export enum TabKeyEnum {
   Long = 'long',
@@ -30,36 +32,36 @@ export default function ActionContainer() {
       <TabPane
         tab={
           <Flex sx={{ alignItems: 'center', gap: 2 }}>
-            <ArrowUpLeft size={24} />
+            <TrendUp size={24} />
             <Box as="span">LONG</Box>
           </Flex>
         }
         key={TabKeyEnum.Long}
       >
-        <div></div>
+        <ActionForm />
       </TabPane>
       <TabPane
         tab={
           <Flex sx={{ alignItems: 'center', gap: 2 }}>
-            <ArrowDownLeft size={24} />
+            <TrendDown size={24} />
             <Box as="span">SHORT</Box>
           </Flex>
         }
         key={TabKeyEnum.Short}
       >
-        <div></div>
+        <ActionForm isLong={false} />
       </TabPane>
-      <TabPane
-        tab={
-          <Flex sx={{ alignItems: 'center', gap: 2 }}>
-            <ArrowBendDoubleUpLeft size={24} />
-            <Box as="span">SWAP</Box>
-          </Flex>
-        }
-        key={TabKeyEnum.Swap}
-      >
-        <div></div>
-      </TabPane>
+      {/*<TabPane*/}
+      {/*  tab={*/}
+      {/*    <Flex sx={{ alignItems: 'center', gap: 2 }}>*/}
+      {/*      <ArrowsLeftRight size={24} />*/}
+      {/*      <Box as="span">SWAP</Box>*/}
+      {/*    </Flex>*/}
+      {/*  }*/}
+      {/*  key={TabKeyEnum.Swap}*/}
+      {/*>*/}
+      {/*  <div></div>*/}
+      {/*</TabPane>*/}
     </Tabs>
   )
 }

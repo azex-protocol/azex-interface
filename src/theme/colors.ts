@@ -29,8 +29,8 @@ function colors(darkMode: boolean): Colors {
 
     //background colors
     background1: '#000000',
-    background2: '#0A0B0D',
-    background3: '#17181A',
+    background2: '#0E0E0E',
+    background3: '#222222',
 
     // other
     red1: '#FA7B70',
