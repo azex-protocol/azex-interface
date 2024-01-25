@@ -1,7 +1,6 @@
-export const isMobile = /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)
-
 const useIsMobile = () => {
-  return isMobile
+  if (typeof window !== 'undefined') return false
+  return /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent)
 }
 
 export default useIsMobile

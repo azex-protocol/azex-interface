@@ -1,13 +1,4 @@
 {
-  "presets": [
-    "@babel/preset-typescript",
-    [
-      "@babel/preset-react",
-      {
-        "runtime": "automatic",
-        "importSource": "react"
-      }
-    ]
-  ],
-  "plugins": ["macros"]
+  "presets": ["next/babel"],
+  "plugins": [["styled-components", { "ssr": true }], "macros"]
 }

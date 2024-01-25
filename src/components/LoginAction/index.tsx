@@ -1,20 +1,35 @@
+'use client'
+
 // eslint-disable-next-line no-restricted-imports
 import { Trans } from '@lingui/macro'
-import React, { useState } from 'react'
+import { Wallet } from '@phosphor-icons/react'
+import { useInkathon } from '@scio-labs/use-inkathon'
+// import { useInkathon } from '@scio-labs/use-inkathon'
+import { useState } from 'react'
 
-import { Button } from 'theme/Buttons'
-import { NAVBAR_HEIGHT } from 'utils/config/constants'
-import ButtonWithIcon from "../../theme/Buttons/ButtonWithIcon";
-import {Wallet} from "@phosphor-icons/react";
+import ButtonWithIcon from 'theme/Buttons/ButtonWithIcon'
+import Modal from 'theme/Modal'
 
 const LOGIN_BUTTON_ID = 'login_button__id'
 
 const LoginAction = () => {
-  const [openLoginModal, setOpenLoginModal] = useState(false)
-  const [openRegisterModal, setOpenRegisterModal] = useState(false)
-  const [openResetModal, setOpenResetModal] = useState(false)
-  const [isVerifyOTP, setIsVerifyOTP] = useState(false)
-
+  const {
+    activeChain,
+    switchActiveChain,
+    connect,
+    disconnect,
+    isConnecting,
+    activeAccount,
+    accounts,
+    setActiveAccount,
+  } = useInkathon()
+  const [opening, setOpening] = useState(false)
+  // const [browserWallets] = useState([
+  //   ...allSubstrateWallets.filter((w) => w.platforms.includes(SubstrateWalletPlatform.Browser) && isWalletInstalled(w)),
+  //   ...allSubstrateWallets.filter(
+  //     (w) => w.platforms.includes(SubstrateWalletPlatform.Browser) && !isWalletInstalled(w)
+  //   ),
+  // ])
   return (
     <>
       <ButtonWithIcon
@@ -22,11 +37,41 @@ const LoginAction = () => {
         width={220}
         variant="ghostPrimary"
         type="button"
-        onClick={() => setOpenLoginModal(true)}
+        // isLoading={isConnecting}
+        // disabled={isConnecting}
+        onClick={() => setOpening(true)}
         icon={<Wallet />}
       >
         <Trans>Connect Wallet</Trans>
       </ButtonWithIcon>
+      {opening && (
+        <Modal isOpen={opening} title="Connect Wallet" hasClose onDismiss={() => setOpening(false)}>
+          {/* {browserWallets.map((w) =>
+            isWalletInstalled(w) ? (
+              <Button
+                key={w.id}
+                className="cursor-pointer"
+                onClick={() => {
+                  connect?.(undefined, w)
+                }}
+              >
+                {w.name}
+              </Button>
+            ) : (
+              <Button key={w.id} className="opacity-50">
+                <a href={w.urls.website}>
+                  <div className="align-center flex justify-start gap-2">
+                    <p>{w.name}</p>
+                    <ArrowSquareUpRight size={16} />
+                  </div>
+                  <p>Not installed</p>
+                </a>
+              </Button>
+            )
+          )} */}
+          avc
+        </Modal>
+      )}
     </>
   )
 }

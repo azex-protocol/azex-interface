@@ -21,13 +21,7 @@
     "prettier",
     "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "prettier",
-    "react",
-    "react-hooks",
-    "@typescript-eslint",
-    "unused-imports"
-  ],
+  "plugins": ["prettier", "react", "react-hooks", "@typescript-eslint", "unused-imports"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",

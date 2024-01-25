@@ -1,8 +1,8 @@
 export const SUPPORTED_LOCALES = ['en']
 export const DEFAULT_LOCALE = 'en'
 
-export const NETWORK = import.meta.env.VITE_NETWORK_ENV
-export const APP_URL = import.meta.env.VITE_URL
+export const NETWORK = process.env.REACT_APP_NETWORK_ENV
+export const APP_URL = process.env.REACT_APP_URL
 
 export const FONT_FAMILY = 'Anuphan'
 export const DATE_FORMAT = 'YYYY/MM/DD'

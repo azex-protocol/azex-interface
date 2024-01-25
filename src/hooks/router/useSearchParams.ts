@@ -1,39 +1,62 @@
-import { useCallback, useMemo } from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/router'
+import { useMemo } from 'react'
 
-import { parsedQueryString } from './useParsedQueryString'
+export type ChangeRouterStrategy = 'push' | 'replace'
 
-export default function useSearchParams() {
-  const { search } = useLocation()
-  const history = useHistory()
-  const searchParams = useMemo(() => parsedQueryString(search), [search])
+const getSearchString = (path: string) => {
+  const search = path.split('?')[1]
+  if (!search) return ''
+  return search.split('#')[0]
+}
 
-  const setSearchParams = useCallback(
-    (params: { [key: string]: string | null }) => {
-      if (Object.keys(params).length === 0) return
-      const urlSearchParams = new URLSearchParams(search)
-      for (const key in params) {
-        if (!!key) {
-          if (params[key]) {
-            urlSearchParams.set(key, params[key] ?? '')
-          } else {
-            urlSearchParams.delete(key)
-          }
+const getHashString = (path: string) => {
+  const hash = path.split('#')[1]
+  if (!hash) return ''
+  return hash.split('?')[0]
+}
+
+type ChangeRouterOption = {
+  strategy?: ChangeRouterStrategy
+  scroll?: boolean
+}
+
+export default function useSearchParam() {
+  const { push, replace, asPath } = useRouter()
+  const pathname = usePathname()
+  const searchParams = useMemo(() => new URLSearchParams(getSearchString(asPath)), [asPath])
+
+  const changeRouter = (
+    searchParams: URLSearchParams,
+    { strategy = 'replace', scroll = false }: ChangeRouterOption
+  ) => {
+    const params = { pathname, search: searchParams.toString(), hash: getHashString(asPath) }
+    return strategy === 'replace' ? replace(params, undefined, { scroll }) : push(params, undefined, { scroll })
+  }
+
+  const updateSearchParams = (params: { [key: string]: string | null }, options: ChangeRouterOption = {}) => {
+    if (Object.keys(params).length === 0) return
+    const urlSearchParams = new URLSearchParams(searchParams)
+    for (const key in params) {
+      if (!!key) {
+        if (params[key]) {
+          urlSearchParams.set(key, params[key] ?? '')
+        } else {
+          urlSearchParams.delete(key)
         }
       }
-      history.replace({ search: urlSearchParams.toString() })
-    },
-    [history, search]
-  )
+    }
+    changeRouter(urlSearchParams, options)
+  }
 
-  const setSearchParamsOnly = (params: { [key: string]: string }) => {
+  const setSearchParams = (params: { [key: string]: string }, options: ChangeRouterOption = {}) => {
     if (Object.keys(params).length === 0) return
     const urlSearchParams = new URLSearchParams()
     for (const key in params) {
       if (!!key) urlSearchParams.set(key, params[key])
     }
-    history.replace({ search: urlSearchParams.toString() })
+    changeRouter(urlSearchParams, options)
   }
 
-  return { searchParams, setSearchParams, setSearchParamsOnly }
+  return { searchParams, updateSearchParams, setSearchParams }
 }

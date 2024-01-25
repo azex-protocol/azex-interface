@@ -3,9 +3,9 @@ import { I18nProvider } from '@lingui/react'
 import dayjs from 'dayjs'
 import { en } from 'make-plural/plurals'
 import { ReactNode, useEffect } from 'react'
+import { messages as DEFAULT_MESSAGES } from 'translations/locales/en/messages'
 
 import { useActiveLocale, useUserLocaleStore } from 'hooks/store/useLocale'
-import { messages as DEFAULT_MESSAGES } from 'locales/en/messages'
 import { DEFAULT_LOCALE } from 'utils/config/constants'
 
 const plurals = {

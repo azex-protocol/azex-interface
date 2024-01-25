@@ -1,11 +1,17 @@
 ## Please check .eslintignore and .gitignore when changing this file
+package-lock.json
+pnpm-lock.yaml
+node_modules
+LICENSE
 
+out
+.next
+public
 ## file extensions
 *.css
 *.svg
 *.png
 *.jpg
 *.po
-src/locales/**
-
-/server
+*.md
+.*

@@ -1,0 +1,3 @@
+files:
+  - source: /translations/locales/en.po
+    translation: /translations/locales/%locale%.po

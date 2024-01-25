@@ -1,6 +1,5 @@
 import { SystemStyleObject } from '@styled-system/css'
-import React, { ReactElement, ReactNode, useEffect, useRef } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import React, { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components/macro'
 import { GridProps } from 'styled-system'
 
@@ -119,8 +118,6 @@ export type TabConfig = {
   activeIcon?: ReactNode
   inactiveIcon?: ReactNode
   key: string
-  route?: string
-  paramKey?: string
 }
 type TabHeadersProps = {
   configs: TabConfig[]
@@ -187,17 +184,8 @@ function TabRouteItem({
   itemOption: Pick<TabHeadersProps, 'itemSx' | 'itemActiveSx' | 'onClickItem' | 'inactiveHasLine'>
   isActive: boolean
 }) {
-  const { search, pathname } = useLocation()
-  const _search = useRef('')
-  useEffect(() => {
-    if (pathname === tabConfig.route) {
-      _search.current = search
-    }
-  }, [pathname, search, tabConfig.route])
   return (
     <TabItem
-      as={tabConfig.route ? Link : undefined}
-      to={tabConfig.route ? tabConfig.route + _search.current : ''}
       type="button"
       size="lg"
       onClick={itemOption.onClickItem ? () => itemOption?.onClickItem?.(tabConfig.key) : undefined}
@@ -205,11 +193,6 @@ function TabRouteItem({
       inactiveHasLine={itemOption.inactiveHasLine}
       sx={{
         flex: ['1 0 auto', '1 0 auto', '0 0 auto'],
-        ...(tabConfig.route
-          ? {
-              '&:active,&:focus,&:hover': { color: 'primary1' },
-            }
-          : {}),
         ...itemOption.itemSx,
         ...(isActive ? itemOption.itemActiveSx : {}),
       }}
