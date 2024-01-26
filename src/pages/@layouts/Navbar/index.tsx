@@ -1,22 +1,28 @@
 import { Trans } from '@lingui/macro'
+import { SignOut } from '@phosphor-icons/react'
+import { useInkathon } from '@scio-labs/use-inkathon'
 import React, { ReactElement, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { LogoText } from 'components/@ui/Logo'
 import LoginAction from 'components/LoginAction'
+import IconButton from 'theme/Buttons/IconButton'
+import Loading from 'theme/Loading'
 // import { useAuthContext } from 'hooks/web3/useAuth'
-import { Box, Flex, LinkUnderline } from 'theme/base'
+import { Box, Flex, LinkUnderline, Type } from 'theme/base'
 import { NAVBAR_HEIGHT } from 'utils/config/constants'
 import ROUTES from 'utils/config/routes'
 import routes from 'utils/config/routes'
+import { shortenAddress } from 'utils/helpers/format'
 
 import Menu from './Menu'
 import { LogoWrapper, Main, Wrapper } from './styled'
 
 const Navbar = ({ height }: { height: number }): ReactElement => {
-  // const { profile } = useAuthContext()
-  const profile = false //
+  const { activeAccount, isConnecting, disconnect } = useInkathon()
   const [activeMobileMenu, setActiveMobileMenu] = useState<boolean>(false)
+
+  console.log('activeAccount', activeAccount)
 
   return (
     <Box as="header" sx={{ zIndex: [101, 101, 101, 4], bg: '#0A0B0D' }}>
@@ -62,7 +68,28 @@ const Navbar = ({ height }: { height: number }): ReactElement => {
             </Box>
 
             <Box flex="0 0 fit-content" sx={{ alignItems: 'center' }}>
-              {profile ? <>Connected success</> : <LoginAction />}
+              {isConnecting ? (
+                <Box px={3}>
+                  <Loading size={16} />
+                </Box>
+              ) : (
+                <>
+                  {activeAccount?.address ? (
+                    <Flex px={3} alignItems="center">
+                      <Type.Caption>{shortenAddress(activeAccount.address)}</Type.Caption>
+                      <IconButton
+                        variant="ghost"
+                        width={32}
+                        height={32}
+                        icon={<SignOut />}
+                        onClick={() => disconnect?.()}
+                      />
+                    </Flex>
+                  ) : (
+                    <LoginAction />
+                  )}
+                </>
+              )}
             </Box>
           </Box>
         </Main>

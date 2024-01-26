@@ -1,20 +1,15 @@
 import { i18n } from '@lingui/core'
 import { I18nProvider } from '@lingui/react'
 import dayjs from 'dayjs'
-import { en } from 'make-plural/plurals'
+import { messages as DEFAULT_MESSAGES } from 'locales/en/messages'
 import { ReactNode, useEffect } from 'react'
 
 import { useActiveLocale, useUserLocaleStore } from 'hooks/store/useLocale'
-import { messages as DEFAULT_MESSAGES } from 'locales/en/messages'
 import { DEFAULT_LOCALE } from 'utils/config/constants'
-
-const plurals = {
-  en,
-}
 
 export async function dynamicActivate(locale: string) {
   // @ts-ignore
-  i18n.loadLocaleData(locale, { plurals: () => plurals[locale as 'en'] })
+  i18n.loadLocaleData(locale)
   const { messages } =
     locale === DEFAULT_LOCALE ? { messages: DEFAULT_MESSAGES } : await import(`./locales/${locale}/messages.ts`)
   i18n.load(locale, messages)
