@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "engines": {
-    "node": ">=16.18.0 <17.0.0"
+    "node": ">=18 <20"
   },
   "scripts": {
     "start": "vite",
@@ -54,8 +54,13 @@
   "dependencies": {
     "@hookform/resolvers": "2.9.11",
     "@lingui/react": "3.17.1",
+    "@lingui/core": "3.17.1",
     "@phosphor-icons/react": "2.0.10",
     "@reach/dialog": "0.18.0",
+    "@scio-labs/use-inkathon": "^0.7.0",
+    "@polkadot/api": "^10.11.1",
+    "@polkadot/api-contract": "^10.11.1",
+    "@polkadot/util-crypto": "^12.6.1",
     "@sentry/react": "7.68.0",
     "@styled-system/css": "5.1.5",
     "@styled-system/should-forward-prop": "5.1.5",

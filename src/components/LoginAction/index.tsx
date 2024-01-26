@@ -1,19 +1,23 @@
 // eslint-disable-next-line no-restricted-imports
 import { Trans } from '@lingui/macro'
-import React, { useState } from 'react'
+import { Wallet } from '@phosphor-icons/react'
+import { alephzeroTestnet, nightlyConnect, useInkathon } from '@scio-labs/use-inkathon'
+import { useState } from 'react'
 
-import { Button } from 'theme/Buttons'
-import { NAVBAR_HEIGHT } from 'utils/config/constants'
-import ButtonWithIcon from "../../theme/Buttons/ButtonWithIcon";
-import {Wallet} from "@phosphor-icons/react";
+import ButtonWithIcon from '../../theme/Buttons/ButtonWithIcon'
 
 const LOGIN_BUTTON_ID = 'login_button__id'
 
 const LoginAction = () => {
-  const [openLoginModal, setOpenLoginModal] = useState(false)
-  const [openRegisterModal, setOpenRegisterModal] = useState(false)
-  const [openResetModal, setOpenResetModal] = useState(false)
-  const [isVerifyOTP, setIsVerifyOTP] = useState(false)
+  const { connect } = useInkathon()
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleConnect = async () => {
+    setIsLoading(true)
+
+    await connect?.(alephzeroTestnet, nightlyConnect)
+    setIsLoading(false)
+  }
 
   return (
     <>
@@ -22,7 +26,9 @@ const LoginAction = () => {
         width={220}
         variant="ghostPrimary"
         type="button"
-        onClick={() => setOpenLoginModal(true)}
+        isLoading={isLoading}
+        disabled={isLoading}
+        onClick={handleConnect}
         icon={<Wallet />}
       >
         <Trans>Connect Wallet</Trans>

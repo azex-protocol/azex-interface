@@ -1,3 +1,4 @@
+import { UseInkathonProvider, alephzeroTestnet } from '@scio-labs/use-inkathon'
 import { LanguageProvider } from 'i18n'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { BrowserRouter } from 'react-router-dom'
@@ -16,15 +17,17 @@ const queryClient = new QueryClient({
 
 const Providers = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
   return (
-    <ThemeProvider>
-      <ThemedGlobalStyle />
-      <LanguageProvider>
-        <QueryClientProvider client={queryClient}>
-          {/* <Updaters /> */}
-          <BrowserRouter>{children}</BrowserRouter>
-        </QueryClientProvider>
-      </LanguageProvider>
-    </ThemeProvider>
+    <UseInkathonProvider appName="AZex" defaultChain={alephzeroTestnet} connectOnInit={false}>
+      <ThemeProvider>
+        <ThemedGlobalStyle />
+        <LanguageProvider>
+          <QueryClientProvider client={queryClient}>
+            {/* <Updaters /> */}
+            <BrowserRouter>{children}</BrowserRouter>
+          </QueryClientProvider>
+        </LanguageProvider>
+      </ThemeProvider>
+    </UseInkathonProvider>
   )
 }
 
