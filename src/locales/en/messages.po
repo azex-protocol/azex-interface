@@ -6,229 +6,252 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/utils/config/translations.tsx
-msgid "Active Copy"
-msgstr "Active Copy"
+#~ msgid "Active Copy"
+#~ msgstr "Active Copy"
 
-#: src/utils/helpers/handleError.ts
-#: src/utils/helpers/handleError.ts
 #: src/utils/helpers/handleError.ts
 msgid "An error occurs. Please try again"
 msgstr "An error occurs. Please try again"
 
 #: src/utils/config/translations.tsx
-msgid "Available Balance"
-msgstr "Available Balance"
+#~ msgid "Available Balance"
+#~ msgstr "Available Balance"
 
 #: src/utils/config/options.tsx
-msgid "Avg Duration"
-msgstr "Avg Duration"
+#~ msgid "Avg Duration"
+#~ msgstr "Avg Duration"
 
 #: src/utils/config/options.tsx
-msgid "Avg Leverage"
-msgstr "Avg Leverage"
+#~ msgid "Avg Leverage"
+#~ msgstr "Avg Leverage"
 
 #: src/utils/config/options.tsx
-msgid "Avg ROI"
-msgstr "Avg ROI"
+#~ msgid "Avg ROI"
+#~ msgstr "Avg ROI"
 
 #: src/utils/config/options.tsx
-msgid "Avg Volume"
-msgstr "Avg Volume"
+#~ msgid "Avg Volume"
+#~ msgstr "Avg Volume"
 
 #: src/utils/config/translations.tsx
-msgid "Balance"
-msgstr "Balance"
+#~ msgid "Balance"
+#~ msgstr "Balance"
 
 #: src/utils/config/translations.tsx
-msgid "BingX"
-msgstr "BingX"
+#~ msgid "BingX"
+#~ msgstr "BingX"
 
 #: src/utils/config/translations.tsx
-msgid "BingX API Key"
-msgstr "BingX API Key"
+#~ msgid "BingX API Key"
+#~ msgstr "BingX API Key"
 
 #: src/theme/Buttons/CopyButton.tsx
 msgid "Can't copy"
 msgstr "Can't copy"
 
 #: src/hooks/web3/useAuth.tsx
-msgid "Cannot unlock your wallet"
-msgstr "Cannot unlock your wallet"
+#~ msgid "Cannot unlock your wallet"
+#~ msgstr "Cannot unlock your wallet"
 
 #: src/utils/config/translations.tsx
-msgid "Close"
-msgstr "Close"
+#~ msgid "Close"
+#~ msgstr "Close"
 
 #: src/theme/Tag/index.tsx
 #: src/utils/config/translations.tsx
-msgid "Closed"
-msgstr "Closed"
+#~ msgid "Closed"
+#~ msgstr "Closed"
 
 #: src/utils/config/translations.tsx
-msgid "Closed Type"
-msgstr "Closed Type"
+#~ msgid "Closed Type"
+#~ msgstr "Closed Type"
+
+#: src/components/LoginAction/index.tsx
+#: src/pages/@layouts/Navbar/Menu.tsx
+msgid "Connect Wallet"
+msgstr "Connect Wallet"
 
 #: src/utils/config/translations.tsx
-msgid "Copy Volume"
-msgstr "Copy Volume"
+#~ msgid "Copy Volume"
+#~ msgstr "Copy Volume"
 
 #: src/theme/Tag/index.tsx
-msgid "Copying"
-msgstr "Copying"
+#~ msgid "Copying"
+#~ msgstr "Copying"
 
 #: src/utils/config/translations.tsx
-msgid "Decrease"
-msgstr "Decrease"
+#~ msgid "Decrease"
+#~ msgstr "Decrease"
+
+#: src/pages/@layouts/Footer/index.tsx
+#: src/pages/@layouts/Navbar/index.tsx
+msgid "Docs"
+msgstr "Docs"
 
 #: src/utils/config/translations.tsx
-msgid "Entry Price"
-msgstr "Entry Price"
+#~ msgid "Entry Price"
+#~ msgstr "Entry Price"
 
 #: src/hooks/web3/useAuth.tsx
 #: src/hooks/web3/useContractMutation.tsx
-msgid "Error"
-msgstr "Error"
+#~ msgid "Error"
+#~ msgstr "Error"
 
 #: src/utils/config/translations.tsx
-msgid "Est. Stop Price"
-msgstr "Est. Stop Price"
+#~ msgid "Est. Stop Price"
+#~ msgstr "Est. Stop Price"
 
 #: src/utils/config/translations.tsx
-msgid "Est. Take Profit Price"
-msgstr "Est. Take Profit Price"
+#~ msgid "Est. Take Profit Price"
+#~ msgstr "Est. Take Profit Price"
 
 #: src/utils/config/translations.tsx
-msgid "Exchange"
-msgstr "Exchange"
+#~ msgid "Exchange"
+#~ msgstr "Exchange"
 
 #: src/utils/config/translations.tsx
-msgid "Follow The Trader"
-msgstr "Follow The Trader"
+#~ msgid "Follow The Trader"
+#~ msgstr "Follow The Trader"
 
 #: src/utils/config/translations.tsx
-msgid "Follow Trader"
-msgstr "Follow Trader"
+#~ msgid "Follow Trader"
+#~ msgstr "Follow Trader"
 
 #: src/utils/config/options.tsx
-msgid "Frequently Trade"
-msgstr "Frequently Trade"
+#~ msgid "Frequently Trade"
+#~ msgstr "Frequently Trade"
 
 #: src/utils/config/translations.tsx
-msgid "GMX"
-msgstr "GMX"
+#~ msgid "GMX"
+#~ msgstr "GMX"
 
 #: src/utils/config/options.tsx
-msgid "High Avg ROI"
-msgstr "High Avg ROI"
+#~ msgid "High Avg ROI"
+#~ msgstr "High Avg ROI"
 
 #: src/utils/config/options.tsx
-msgid "High Avg Volume"
-msgstr "High Avg Volume"
+#~ msgid "High Avg Volume"
+#~ msgstr "High Avg Volume"
 
 #: src/utils/config/options.tsx
-msgid "High Max ROI"
-msgstr "High Max ROI"
+#~ msgid "High Max ROI"
+#~ msgstr "High Max ROI"
 
 #: src/utils/config/options.tsx
-msgid "High PnL"
-msgstr "High PnL"
+#~ msgid "High PnL"
+#~ msgstr "High PnL"
 
 #: src/utils/config/options.tsx
-msgid "High PnL Ratio"
-msgstr "High PnL Ratio"
+#~ msgid "High PnL Ratio"
+#~ msgstr "High PnL Ratio"
 
 #: src/utils/config/options.tsx
-msgid "High Profit Rate"
-msgstr "High Profit Rate"
+#~ msgid "High Profit Rate"
+#~ msgstr "High Profit Rate"
 
 #: src/utils/config/options.tsx
-msgid "High Win Rate"
-msgstr "High Win Rate"
+#~ msgid "High Win Rate"
+#~ msgstr "High Win Rate"
 
 #: src/utils/config/translations.tsx
-msgid "Increase"
-msgstr "Increase"
+#~ msgid "Increase"
+#~ msgstr "Increase"
 
 #: src/utils/helpers/handleError.ts
-msgid "Insufficient funds for gas fee and value"
-msgstr "Insufficient funds for gas fee and value"
+#~ msgid "Insufficient funds for gas fee and value"
+#~ msgstr "Insufficient funds for gas fee and value"
 
 #: src/utils/config/translations.tsx
-msgid "Label"
-msgstr "Label"
+#~ msgid "Label"
+#~ msgstr "Label"
+
+#: src/pages/@layouts/Footer/index.tsx
+msgid "Landing Page"
+msgstr "Landing Page"
 
 #: src/utils/config/translations.tsx
-msgid "Leverage"
-msgstr "Leverage"
+#~ msgid "Leverage"
+#~ msgstr "Leverage"
 
 #: src/theme/Tag/index.tsx
 #: src/utils/config/translations.tsx
-msgid "Liquidated"
-msgstr "Liquidated"
+#~ msgid "Liquidated"
+#~ msgstr "Liquidated"
 
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
-msgid "Liquidation"
-msgstr "Liquidation"
+#~ msgid "Liquidation"
+#~ msgstr "Liquidation"
+
+#: src/pages/@layouts/Navbar/Menu.tsx
+msgid "List Collection"
+msgstr "List Collection"
 
 #: src/theme/Tag/index.tsx
-msgid "Long"
-msgstr "Long"
+#~ msgid "Long"
+#~ msgstr "Long"
 
 #: src/utils/config/options.tsx
-msgid "Low Leverage"
-msgstr "Low Leverage"
+#~ msgid "Low Leverage"
+#~ msgstr "Low Leverage"
 
 #: src/utils/config/options.tsx
-msgid "Low Max Drawdown"
-msgstr "Low Max Drawdown"
+#~ msgid "Low Max Drawdown"
+#~ msgstr "Low Max Drawdown"
 
 #: src/utils/config/options.tsx
-msgid "Low Overtrading"
-msgstr "Low Overtrading"
+#~ msgid "Low Overtrading"
+#~ msgstr "Low Overtrading"
 
 #: src/utils/config/options.tsx
-msgid "MDD"
-msgstr "MDD"
+#~ msgid "MDD"
+#~ msgstr "MDD"
 
 #: src/utils/config/translations.tsx
-msgid "Manual"
-msgstr "Manual"
+#~ msgid "Manual"
+#~ msgstr "Manual"
 
 #: src/utils/config/translations.tsx
-msgid "Margin"
-msgstr "Margin"
+#~ msgid "Margin"
+#~ msgstr "Margin"
 
 #: src/utils/config/translations.tsx
-msgid "Margin Protection"
-msgstr "Margin Protection"
+#~ msgid "Margin Protection"
+#~ msgstr "Margin Protection"
 
 #: src/utils/config/translations.tsx
-msgid "Margin Transferred"
-msgstr "Margin Transferred"
+#~ msgid "Margin Transferred"
+#~ msgstr "Margin Transferred"
 
 #: src/utils/config/options.tsx
-msgid "Max Drawdown"
-msgstr "Max Drawdown"
+#~ msgid "Max Drawdown"
+#~ msgstr "Max Drawdown"
 
 #: src/utils/config/translations.tsx
-msgid "Max Margin Per Position"
-msgstr "Max Margin Per Position"
+#~ msgid "Max Margin Per Position"
+#~ msgstr "Max Margin Per Position"
 
 #: src/utils/config/options.tsx
-msgid "Max ROI"
-msgstr "Max ROI"
+#~ msgid "Max ROI"
+#~ msgstr "Max ROI"
 
 #: src/utils/config/options.tsx
-msgid "Monthly"
-msgstr "Monthly"
+#~ msgid "Monthly"
+#~ msgstr "Monthly"
 
 #: src/utils/config/translations.tsx
-msgid "Name"
-msgstr "Name"
+#~ msgid "Name"
+#~ msgstr "Name"
 
+#: src/theme/NoData/index.tsx
 #: src/theme/Select/index.tsx
 msgid "No Data Found"
 msgstr "No Data Found"
@@ -236,24 +259,24 @@ msgstr "No Data Found"
 #: src/theme/Tag/index.tsx
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
-msgid "Open"
-msgstr "Open"
+#~ msgid "Open"
+#~ msgstr "Open"
 
 #: src/utils/config/options.tsx
-msgid "Order/Pos"
-msgstr "Order/Pos"
+#~ msgid "Order/Pos"
+#~ msgstr "Order/Pos"
 
 #: src/utils/config/options.tsx
-msgid "Order/Pos Ratio"
-msgstr "Order/Pos Ratio"
+#~ msgid "Order/Pos Ratio"
+#~ msgstr "Order/Pos Ratio"
 
 #: src/utils/config/translations.tsx
-msgid "Orders Lookback"
-msgstr "Orders Lookback"
+#~ msgid "Orders Lookback"
+#~ msgstr "Orders Lookback"
 
 #: src/hooks/web3/useChainRestrict.tsx
-msgid "Please switch your wallet to {0}"
-msgstr "Please switch your wallet to {0}"
+#~ msgid "Please switch your wallet to {0}"
+#~ msgstr "Please switch your wallet to {0}"
 
 #: src/utils/config/translations.tsx
 msgid "Please wait a few minutes before you try again"
@@ -261,162 +284,166 @@ msgstr "Please wait a few minutes before you try again"
 
 #: src/utils/config/options.tsx
 #: src/utils/config/translations.tsx
-msgid "PnL"
-msgstr "PnL"
+#~ msgid "PnL"
+#~ msgstr "PnL"
 
 #: src/utils/config/options.tsx
-msgid "PnL Ratio"
-msgstr "PnL Ratio"
+#~ msgid "PnL Ratio"
+#~ msgstr "PnL Ratio"
 
 #: src/utils/config/translations.tsx
-msgid "Position Side"
-msgstr "Position Side"
+#~ msgid "Position Side"
+#~ msgstr "Position Side"
 
 #: src/utils/config/options.tsx
-msgid "Profit Rate"
-msgstr "Profit Rate"
+#~ msgid "Profit Rate"
+#~ msgstr "Profit Rate"
 
 #: src/utils/config/translations.tsx
-msgid "Quantity"
-msgstr "Quantity"
+#~ msgid "Quantity"
+#~ msgstr "Quantity"
 
 #: src/utils/config/options.tsx
-msgid "Quickly Settled"
-msgstr "Quickly Settled"
+#~ msgid "Quickly Settled"
+#~ msgstr "Quickly Settled"
 
 #: src/utils/config/translations.tsx
-msgid "Reverse Copy"
-msgstr "Reverse Copy"
+#~ msgid "Reverse Copy"
+#~ msgstr "Reverse Copy"
 
 #: src/theme/Tag/index.tsx
 #: src/utils/config/translations.tsx
-msgid "Running"
-msgstr "Running"
+#~ msgid "Running"
+#~ msgstr "Running"
 
 #: src/theme/Tag/index.tsx
-msgid "Short"
-msgstr "Short"
+#~ msgid "Short"
+#~ msgstr "Short"
 
 #: src/utils/config/translations.tsx
-msgid "Side"
-msgstr "Side"
+#~ msgid "Side"
+#~ msgstr "Side"
 
 #: src/utils/config/translations.tsx
-msgid "Size Token"
-msgstr "Size Token"
+#~ msgid "Size Token"
+#~ msgstr "Size Token"
 
 #: src/utils/config/translations.tsx
-msgid "Skip Lower Leverage Position"
-msgstr "Skip Lower Leverage Position"
+#~ msgid "Skip Lower Leverage Position"
+#~ msgstr "Skip Lower Leverage Position"
 
 #: src/utils/config/translations.tsx
-msgid "Smart Wallet"
-msgstr "Smart Wallet"
+#~ msgid "Smart Wallet"
+#~ msgstr "Smart Wallet"
 
 #: src/utils/config/translations.tsx
-msgid "Source Size Token"
-msgstr "Source Size Token"
+#~ msgid "Source Size Token"
+#~ msgstr "Source Size Token"
 
 #: src/utils/config/translations.tsx
-msgid "Status"
-msgstr "Status"
+#~ msgid "Status"
+#~ msgstr "Status"
 
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
-msgid "Stop Loss"
-msgstr "Stop Loss"
+#~ msgid "Stop Loss"
+#~ msgstr "Stop Loss"
 
 #: src/utils/config/translations.tsx
-msgid "Stop Loss Amount"
-msgstr "Stop Loss Amount"
+#~ msgid "Stop Loss Amount"
+#~ msgstr "Stop Loss Amount"
 
 #: src/utils/config/translations.tsx
-msgid "Stop Loss Details"
-msgstr "Stop Loss Details"
+#~ msgid "Stop Loss Details"
+#~ msgstr "Stop Loss Details"
 
 #: src/utils/config/translations.tsx
-msgid "Stop Loss Type"
-msgstr "Stop Loss Type"
+#~ msgid "Stop Loss Type"
+#~ msgstr "Stop Loss Type"
 
 #: src/theme/Tag/index.tsx
 #: src/utils/config/translations.tsx
-msgid "Stopped"
-msgstr "Stopped"
+#~ msgid "Stopped"
+#~ msgstr "Stopped"
 
 #: src/hooks/web3/useContractMutation.tsx
-msgid "Success"
-msgstr "Success"
+#~ msgid "Success"
+#~ msgstr "Success"
 
 #: src/utils/config/translations.tsx
-msgid "Synthetix"
-msgstr "Synthetix"
+#~ msgid "Synthetix"
+#~ msgstr "Synthetix"
 
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
-msgid "Take Profit"
-msgstr "Take Profit"
+#~ msgid "Take Profit"
+#~ msgstr "Take Profit"
 
 #: src/utils/config/translations.tsx
-msgid "Take Profit Amount"
-msgstr "Take Profit Amount"
+#~ msgid "Take Profit Amount"
+#~ msgstr "Take Profit Amount"
 
 #: src/utils/config/translations.tsx
-msgid "Take Profit Details"
-msgstr "Take Profit Details"
+#~ msgid "Take Profit Details"
+#~ msgstr "Take Profit Details"
 
 #: src/utils/config/translations.tsx
-msgid "Take Profit Type"
-msgstr "Take Profit Type"
+#~ msgid "Take Profit Type"
+#~ msgstr "Take Profit Type"
+
+#: src/pages/@layouts/Footer/index.tsx
+msgid "Terms & Policy"
+msgstr "Terms & Policy"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders earning the most money"
-msgstr "The percentile ranking of traders earning the most money"
+#~ msgid "The percentile ranking of traders earning the most money"
+#~ msgstr "The percentile ranking of traders earning the most money"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the fastest average position closure time."
-msgstr "The percentile ranking of traders with the fastest average position closure time."
+#~ msgid "The percentile ranking of traders with the fastest average position closure time."
+#~ msgstr "The percentile ranking of traders with the fastest average position closure time."
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the fewest trades per position"
-msgstr "The percentile ranking of traders with the fewest trades per position"
+#~ msgid "The percentile ranking of traders with the fewest trades per position"
+#~ msgstr "The percentile ranking of traders with the fewest trades per position"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest average return on investment"
-msgstr "The percentile ranking of traders with the highest average return on investment"
+#~ msgid "The percentile ranking of traders with the highest average return on investment"
+#~ msgstr "The percentile ranking of traders with the highest average return on investment"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest average trading volume"
-msgstr "The percentile ranking of traders with the highest average trading volume"
+#~ msgid "The percentile ranking of traders with the highest average trading volume"
+#~ msgstr "The percentile ranking of traders with the highest average trading volume"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest maximum return on investment"
-msgstr "The percentile ranking of traders with the highest maximum return on investment"
+#~ msgid "The percentile ranking of traders with the highest maximum return on investment"
+#~ msgstr "The percentile ranking of traders with the highest maximum return on investment"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest number of trades"
-msgstr "The percentile ranking of traders with the highest number of trades"
+#~ msgid "The percentile ranking of traders with the highest number of trades"
+#~ msgstr "The percentile ranking of traders with the highest number of trades"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest profit and loss ratio"
-msgstr "The percentile ranking of traders with the highest profit and loss ratio"
+#~ msgid "The percentile ranking of traders with the highest profit and loss ratio"
+#~ msgstr "The percentile ranking of traders with the highest profit and loss ratio"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest profit rate"
-msgstr "The percentile ranking of traders with the highest profit rate"
+#~ msgid "The percentile ranking of traders with the highest profit rate"
+#~ msgstr "The percentile ranking of traders with the highest profit rate"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the highest win rate"
-msgstr "The percentile ranking of traders with the highest win rate"
+#~ msgid "The percentile ranking of traders with the highest win rate"
+#~ msgstr "The percentile ranking of traders with the highest win rate"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the lowest leverage usage"
-msgstr "The percentile ranking of traders with the lowest leverage usage"
+#~ msgid "The percentile ranking of traders with the lowest leverage usage"
+#~ msgstr "The percentile ranking of traders with the lowest leverage usage"
 
 #: src/utils/config/options.tsx
-msgid "The percentile ranking of traders with the lowest maximum drawdown"
-msgstr "The percentile ranking of traders with the lowest maximum drawdown"
+#~ msgid "The percentile ranking of traders with the lowest maximum drawdown"
+#~ msgstr "The percentile ranking of traders with the lowest maximum drawdown"
 
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
@@ -424,32 +451,32 @@ msgid "The server is not responding, please try again later!"
 msgstr "The server is not responding, please try again later!"
 
 #: src/utils/config/translations.tsx
-msgid "Total Size Token"
-msgstr "Total Size Token"
+#~ msgid "Total Size Token"
+#~ msgstr "Total Size Token"
 
 #: src/utils/config/options.tsx
-msgid "Trades"
-msgstr "Trades"
+#~ msgid "Trades"
+#~ msgstr "Trades"
 
 #: src/utils/config/translations.tsx
-msgid "Trading Pairs"
-msgstr "Trading Pairs"
+#~ msgid "Trading Pairs"
+#~ msgstr "Trading Pairs"
 
 #: src/hooks/web3/useContractMutation.tsx
-msgid "Transaction has been executed successfully"
-msgstr "Transaction has been executed successfully"
+#~ msgid "Transaction has been executed successfully"
+#~ msgstr "Transaction has been executed successfully"
 
 #: src/hooks/web3/useChainRestrict.tsx
-msgid "Unsupported Network"
-msgstr "Unsupported Network"
+#~ msgid "Unsupported Network"
+#~ msgstr "Unsupported Network"
 
 #: src/utils/config/options.tsx
-msgid "Weekly"
-msgstr "Weekly"
+#~ msgid "Weekly"
+#~ msgstr "Weekly"
 
 #: src/utils/config/options.tsx
-msgid "Win Rate"
-msgstr "Win Rate"
+#~ msgid "Win Rate"
+#~ msgstr "Win Rate"
 
 #: src/utils/config/translations.tsx
 msgid "You are not authorized to perform this action"
@@ -457,29 +484,33 @@ msgstr "You are not authorized to perform this action"
 
 #: src/utils/config/translations.tsx
 #: src/utils/config/translations.tsx
-msgid "changed"
-msgstr "changed"
+#~ msgid "changed"
+#~ msgstr "changed"
 
 #: src/utils/config/translations.tsx
-msgid "copy position"
-msgstr "copy position"
+#~ msgid "copy position"
+#~ msgstr "copy position"
 
 #: src/utils/config/translations.tsx
-msgid "copy wallet"
-msgstr "copy wallet"
+#~ msgid "copy wallet"
+#~ msgstr "copy wallet"
 
 #: src/utils/config/translations.tsx
-msgid "copy-trade"
-msgstr "copy-trade"
+#~ msgid "copy-trade"
+#~ msgstr "copy-trade"
 
 #: src/utils/config/translations.tsx
-msgid "created"
-msgstr "created"
+#~ msgid "created"
+#~ msgstr "created"
 
 #: src/utils/config/translations.tsx
-msgid "deleted"
-msgstr "deleted"
+#~ msgid "deleted"
+#~ msgstr "deleted"
 
 #: src/theme/Tab/IconTabItem.tsx
 msgid "{text}"
 msgstr "{text}"
+
+#: src/pages/@layouts/Footer/index.tsx
+msgid "© 2023 Copin. All rights reserved."
+msgstr "© 2023 Copin. All rights reserved."

@@ -5,15 +5,15 @@ UI perpetual trading. Open Long/Short position with x20 leverage
 Develop:
 
 ```shell
-yarn
-yarn start
+pnpm i
+pnpm start
 ```
 
 Build:
 
 ```shell
-yarn
-yarn i18n
-yarn build:{{environment}}
+pnpm
+pnpm run i18n
+pnpm run build:{{environment}}
 # environment: dev / staging / prod
 ```
