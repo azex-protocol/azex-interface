@@ -5,6 +5,7 @@ UI perpetual trading. Open Long/Short position with x20 leverage
 Develop:
 
 ```shell
+npm i -g pnpm
 pnpm i
 pnpm start
 ```
