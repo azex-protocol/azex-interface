@@ -2,6 +2,7 @@ import Container from 'components/@ui/Container'
 import { Box, Flex, Type } from 'theme/base'
 
 import ActionContainer from './ActionContainer'
+import TradingViewChart from 'components/TradingViewChart'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           </Flex>
         </Container>
         <Container sx={{ margin: 2 }}>
-          <Type.Caption>Chart</Type.Caption>
+          <TradingViewChart />
         </Container>
       </Box>
       <Container sx={{ margin: 2, maxWidth: '600px', minWidth: '420px' }}>
