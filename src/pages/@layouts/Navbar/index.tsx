@@ -4,7 +4,7 @@ import { useInkathon } from '@scio-labs/use-inkathon'
 import React, { ReactElement, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { LogoText } from 'components/@ui/Logo'
+import { LogoText, AzLogo } from 'components/@ui/Logo'
 import LoginAction from 'components/LoginAction'
 import IconButton from 'theme/Buttons/IconButton'
 import Loading from 'theme/Loading'
@@ -40,9 +40,6 @@ const Navbar = ({ height }: { height: number }): ReactElement => {
           <Box alignItems="center" display={{ _: 'flex', md: 'flex' }}>
             <Box
               sx={{
-                borderLeft: 'small',
-                borderRight: 'small',
-                borderColor: 'neutral4',
                 height: '100%',
                 width: 100,
                 textAlign: 'center',
@@ -65,6 +62,15 @@ const Navbar = ({ height }: { height: number }): ReactElement => {
               >
                 <Trans>Docs</Trans>
               </LinkUnderline>
+            </Box>
+            <Box
+              sx={{
+                height: '100%',
+                width: 200,
+                textAlign: 'center',
+              }}
+            >
+              <AzLogo />
             </Box>
 
             <Box flex="0 0 fit-content" sx={{ alignItems: 'center' }}>
