@@ -8,8 +8,11 @@ import SliderInput from 'theme/SliderInput'
 import { Box, Flex, Type } from 'theme/base'
 
 import { BackTestFormValues, backTestFormSchema, fieldName } from './type'
+import { useBalance, useInkathon } from '@scio-labs/use-inkathon'
 
 export default function ActionForm({ isLong = true }: { isLong?: boolean }) {
+  const { activeAccount } = useInkathon()
+  const balanceData = useBalance(activeAccount?.address)
   const {
     control,
     watch,
@@ -51,7 +54,7 @@ export default function ActionForm({ isLong = true }: { isLong?: boolean }) {
         name={fieldName.amount}
         control={control}
         label="Pay"
-        annotation={'Balance: N/A'}
+        annotation={`Balance: ${balanceData?.balanceFormatted ? balanceData.balanceFormatted : '--'}`}
         suffix={<InputSuffix>USD</InputSuffix>}
         error={errors.amount?.message}
         placeholder={'Enter amount'}
