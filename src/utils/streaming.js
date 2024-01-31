@@ -125,7 +125,7 @@ export function subscribeOnStream(
     handlers: [handler],
   }
   channelToSubscription.set(channelString, subscriptionItem)
-  console.log('[subscribeBars]: Subscribe to streaming. Channel:', channelString)
+  console.log('[subscribeBars]: Subscribe to streaming. Channel:', channelString, subscriptionItem)
 
   // Start streaming when the first subscription is made
   startStreaming()
