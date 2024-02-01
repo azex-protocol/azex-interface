@@ -7,6 +7,7 @@ export const APP_URL = import.meta.env.VITE_URL
 export const FONT_FAMILY = 'Anuphan'
 export const DATE_FORMAT = 'YYYY/MM/DD'
 export const DAYJS_FULL_DATE_FORMAT = 'YYYY/MM/DD - HH:mm'
+export const TIMEZONE_OFFSET = -new Date().getTimezoneOffset() * 60
 export const DEFAULT_LIMIT = 20
 export const DEFAULT_LIMIT_VALUES = [20, 50, 100]
 

@@ -1,4 +1,6 @@
-export const QUERY_KEYS = {}
+export const QUERY_KEYS = {
+  GET_24H_PRICES: 'GET_24H_PRICES',
+}
 
 export const STORAGE_KEYS = {}
 

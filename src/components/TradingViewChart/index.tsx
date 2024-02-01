@@ -1,12 +1,14 @@
 import { useEffect } from 'react'
 import { ResolutionString } from '../../../public/tradingview/charting_library'
 
-import datafeed from 'utils/datafeed'
 import { themeColors } from 'theme/colors'
+import useTVDatafeed from 'hooks/helpers/useTVDatafeed'
 
 const chartingLibraryPath = '/tradingview/charting_library/'
 
 function TradingViewChart() {
+  const { datafeed } = useTVDatafeed({ tokenSymbol: 'ETHUSD' })
+
   useEffect(() => {
     const container = document.getElementById('tv_chart_container')
     if (typeof window !== 'undefined' && window.TradingView && container) {
@@ -17,9 +19,9 @@ function TradingViewChart() {
         library_path: chartingLibraryPath,
         datafeed,
         symbol: 'ETHUSD',
-        interval: '1D' as ResolutionString,
+        interval: '1H' as ResolutionString,
         fullscreen: false,
-        debug: true,
+        debug: false,
         enabled_features: ['show_exchange_logos'],
         theme: 'Dark',
         overrides: {
