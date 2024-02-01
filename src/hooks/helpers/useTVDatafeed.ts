@@ -36,7 +36,7 @@ export default function useTVDatafeed({ tokenSymbol }: { tokenSymbol?: string })
               .json()
               .then((symbolInfo) => {
                 console.log('[resolveSymbol]: Symbol resolved', symbolInfo)
-                onSymbolResolvedCallback({ ...symbolInfo, pricescale: 100 })
+                onSymbolResolvedCallback({ ...symbolInfo, pricescale: 100, description: 'ETH / USD (Azex)' })
               })
               .catch((error) => {
                 console.log('[resolveSymbol]: Cannot resolve symbol', symbolName)
@@ -80,7 +80,6 @@ export default function useTVDatafeed({ tokenSymbol }: { tokenSymbol?: string })
                   lastBarsCache.set(symbolInfo.ticker, {
                     ...bars[bars.length - 1],
                   })
-                  console.log('lastBarsCache', lastBarsCache)
                 }
                 onHistoryCallback(bars, { noData: false })
               })
