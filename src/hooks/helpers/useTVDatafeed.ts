@@ -36,7 +36,7 @@ export default function useTVDatafeed({ tokenSymbol }: { tokenSymbol?: string })
               .json()
               .then((symbolInfo) => {
                 console.log('[resolveSymbol]: Symbol resolved', symbolInfo)
-                onSymbolResolvedCallback(symbolInfo)
+                onSymbolResolvedCallback({ ...symbolInfo, pricescale: 100 })
               })
               .catch((error) => {
                 console.log('[resolveSymbol]: Cannot resolve symbol', symbolName)

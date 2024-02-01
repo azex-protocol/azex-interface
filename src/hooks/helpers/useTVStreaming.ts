@@ -1,5 +1,4 @@
 import { useRealtimeUsdPricesStore } from 'hooks/store/useUsdPrices'
-import dayjs from 'dayjs'
 
 const streamingUrl = 'https://benchmarks.pyth.network/v1/shims/tradingview/streaming'
 const channelToSubscription = new Map()
@@ -75,8 +74,6 @@ export default function useTVStreaming({ tokenSymbol }: { tokenSymbol?: string }
 
     const lastDailyBar = subscriptionItem.lastDailyBar
     const nextDailyBarTime = getNextDailyBarTime(lastDailyBar.time)
-    console.log('tradeTime', tradeTime)
-    console.log('nextDailyBarTime', nextDailyBarTime)
 
     let bar: any
     if (tradeTime >= nextDailyBarTime) {
@@ -99,6 +96,7 @@ export default function useTVStreaming({ tokenSymbol }: { tokenSymbol?: string }
     }
 
     subscriptionItem.lastDailyBar = bar
+    console.log('tokenSymbol', tokenSymbol, tradePrice)
     if (tokenSymbol) {
       setPrice({ address: tokenSymbol, price: tradePrice })
     }
@@ -154,7 +152,7 @@ export default function useTVStreaming({ tokenSymbol }: { tokenSymbol?: string }
 }
 
 function getNextDailyBarTime(barTime: number) {
-  return dayjs(barTime * 1000)
-    .add(1, 'day')
-    .unix()
+  const date = new Date(barTime)
+  date.setDate(date.getDate() + 1)
+  return date.getTime()
 }

@@ -22,7 +22,6 @@ const useUsdPricesStore = create<BalancesState>()(
         if (state.prices[address]) {
           state.prices[address] = price
         }
-        console.log('state.prices', state.prices, address, price)
       }),
   }))
 )

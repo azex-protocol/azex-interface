@@ -13,9 +13,9 @@ export default function TokenStatistics() {
       <Type.Large>ETH/USD</Type.Large>
       <Box ml={55}>
         <Box>
-          <Type.Body>${formatNumber(prices['ETHUSD'])}</Type.Body>
+          <Type.Body>${formatNumber(prices['ETHUSD'], 2, 2)}</Type.Body>
         </Box>
-        <Box>
+        <Box width={90}>
           <Type.Caption color={'neutral3'}>${formatNumber(prices['ETHUSD'], 2, 2)}</Type.Caption>
         </Box>
       </Box>
